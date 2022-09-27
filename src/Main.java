@@ -4,13 +4,16 @@ public class Main {
         Scanner s = new Scanner(System.in);
 
             System.out.println("Tip Calculator:");
-            System.out.print("Enter the cost of the meal: $");
 
+
+            System.out.print("Enter the cost of the meal: $");
             double mealAmount = s.nextDouble();
             System.out.print("Select how much you would like to tip: ");
             double tip = s.nextDouble();
             System.out.print("Select how many people are there: ");
             int numberOfPeople = s.nextInt();
+
+
             double tipPercentage = tip / 100;
             double totalTip = Math.round((mealAmount * tipPercentage) * 100.0) / 100.0;
             double tipPerPerson = Math.round((totalTip / numberOfPeople) * 100.0) / 100.0;
