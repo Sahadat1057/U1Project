@@ -11,14 +11,14 @@ public class Main {
             System.out.print("Select how much you would like to tip: ");
             int tip = s.nextInt(); //Lines 11 and 12 ask the user to input a value for the amount of tip they would like to give
             System.out.print("Select how many people are there: ");
-            int numberOfPeople = s.nextInt(); //Lines 13 and 14 ask the user to input a value for the amount of people that ate the meal
+            int numberOfPeople = s.nextInt(); //Lines 13 and 14 ask the user to input a value for the amount of people that were served
 
 
             double tipPercentage = tip / 100.0; //the variable tipPercentage calculates tip in a decimal form because the variable 'tip' is just a whole number
-            double totalTip = Math.round((mealAmount * tipPercentage) * 100.0) / 100.0; //calculates the rounded total amount of tip everyone has to give
+            double totalTip = Math.round((mealAmount * tipPercentage) * 100.0) / 100.0; //calculates the rounded total tip everyone has to give
             double tipPerPerson = Math.round((totalTip / numberOfPeople) * 100.0) / 100.0; //calculates the rounded tip each person needs to give
             double totalBill = mealAmount + totalTip; //calculates the total bill for everyone including the total tip
-            double totalPerPerson = Math.round((totalBill / numberOfPeople) * 100.0) / 100.0; //calculates the total each person needs to pay including the tip
+            double totalPerPerson = Math.round((totalBill / numberOfPeople) * 100.0) / 100.0; //calculates the rounded total each person needs to pay including the tip
 
 
             System.out.println("The total tip amount is: $" + totalTip); //print statement that prints total tip amount
