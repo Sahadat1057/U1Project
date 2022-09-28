@@ -14,7 +14,7 @@ public class Main {
             int numberOfPeople = s.nextInt(); //Lines 13 and 14 ask the user to input a value for the amount of people that ate the meal
 
 
-            double tipPercentage = tip / 100; //the variable tipPercentage calculates tip in a decimal form because the variable 'tip' is just a whole number
+            double tipPercentage = tip / 100.0; //the variable tipPercentage calculates tip in a decimal form because the variable 'tip' is just a whole number
             double totalTip = Math.round((mealAmount * tipPercentage) * 100.0) / 100.0; //calculates the rounded total amount of tip everyone has to give
             double tipPerPerson = Math.round((totalTip / numberOfPeople) * 100.0) / 100.0; //calculates the rounded tip each person needs to give
             double totalBill = mealAmount + totalTip; //calculates the total bill for everyone including the total tip
