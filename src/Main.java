@@ -9,7 +9,7 @@ public class Main {
             System.out.print("Enter the cost of the meal: $");
             double mealAmount = s.nextDouble(); //Lines 9 and 10 ask the user to input a value for the cost of the meal
             System.out.print("Select how much you would like to tip: ");
-            double tip = s.nextDouble(); //Lines 11 and 12 ask the user to input a value for the amount of tip they would like to give
+            int tip = s.nextInt(); //Lines 11 and 12 ask the user to input a value for the amount of tip they would like to give
             System.out.print("Select how many people are there: ");
             int numberOfPeople = s.nextInt(); //Lines 13 and 14 ask the user to input a value for the amount of people that ate the meal
 
